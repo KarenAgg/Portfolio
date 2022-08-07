@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+html{
+    font-family: "oxygen", sans-serif;
+}
+
+body{
+    background: #DADEE1;
+    color: #0D0D0D;
+}
+
+/* Header */
+
+.div-geral{
+    margin: 0 2em;
+}
+
+.top-header{
+    height: 3em;
+    position: relative;
+}
+
+.top-header p{
+    font-size: 1.5em;
+}
+
+.top-nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.top-nav span{
+    font-size: 1.5em;
+}
+
+/* Main */
+
+.top-content{
+    padding: 3.5em 4em 0 0;
+    position: relative;
+    height: 26em;
+    overflow: hidden;
+}
+
+.top-content h1 b{
+    color: #1DC9EE;
+
+}
+
+.top-content h2{
+    font-size: 1.1em;
+    line-height: 0.2em;
+}
+
+.button-contact{
+    display: inline-block;
+    text-decoration: none;
+    font-size: .75em;
+    font-weight: bold;
+    background-color: #1DC9EE;
+    color: #0D0D0D;
+    padding: .7em .2em .7em .75em;
+    margin: 2.5em 0 9em 0;
+    border-radius: .5em;
+    width: auto;
+}
+
+.icon-arrow{
+    color: white;
+    background-color: rgba(255,255,255, .4);
+    padding: .5em;
+    border-radius: .5em;
+    margin-left:  1.3em;
+    
+}
+
+.top-content-image{
+    position: absolute;
+    top: 0;
+    left: -12em;
+    display: inline-block;
+
+}
+
+.top-content-image img{
+    width: 220px;
+    height: 450px;
+    margin: 4em 0 0 21.8em;
+
+}
+
+.ul-icons{
+    padding: 0;
+}
+.ul-icons li{
+    margin-top: .75em;
+    font-size: 1.3em;
+    list-style: none;
+}
+
+
+
