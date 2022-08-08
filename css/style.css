@@ -5,7 +5,7 @@ html{
 }
 
 body{
-    background: #F2F2F2;
+    background: #FFFFFF;
     color: #0D0D0D;
 }
 
@@ -20,10 +20,14 @@ body{
     position: relative;
 }
 
-.top-header p{
+.top-nome{
+    padding-top: 1em;
+}
+
+/* .top-header p{
     font-size: 1.5em;
     padding-top: .2em;
-}
+} */
 
 .top-nav{
     position: absolute;
@@ -33,6 +37,7 @@ body{
 
 .top-nav i{
     font-size: 2em;
+    padding: .35em;
 }
 
 /* Main */
@@ -43,43 +48,8 @@ body{
     overflow: hidden;
 }
 
-.top-content h1{
-    font-family: "source-serif-4";
-}
-.cor-nome{
-    color: #1DC9EE;
-}
-
-.top-content h2{
-    font-size: 1.1em;
-    line-height: 0.2em;
-}
-
-.button-contact{
-    display: inline-block;
-    text-decoration: none;
-    font-size: .75em;
-    font-weight: bold;
-    background-color: #1DC9EE;
-    color: #0D0D0D;
-    padding: .7em .2em .7em .75em;
-    margin: 2.5em 0 9em 0;
-    border-radius: .5em;
-    width: auto;
-}
-
-.icon-arrow{
-    color: white;
-    background-color: rgba(255,255,255, .4);
-    padding: .5em;
-    border-radius: .5em;
-    margin-left:  1.3em;
-    
-}
-
-
 .ul-icons{
-    padding: 0;
+    padding: 2.5em 0;
 }
 .ul-icons li{
     margin-top: .75em;
@@ -89,10 +59,48 @@ body{
 
 .top-image{ 
     position: absolute;
-    top: 8em;
-    left: 6em;
-    display: inline-block;
+    top: 4em;
+    left: 4.5em;
 } 
+
+.top-text{
+    padding: 2em 0;
+}
+.cor-nome{
+    color: #1DC9EE;
+}
+.top-text h2{
+    color: #404040;
+    font-size: 1.2em;
+    line-height: 0.2em;
+}
+.top-text p{
+    display: inline-block;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.button-contact{
+    display: inline-block;
+    text-decoration: none;
+    font-size: .9em;
+    font-weight: bold;
+    background-color: #1DC9EE;
+    color: #0D0D0D;
+    padding: .98em .2em .9em .75em;
+    margin: 0 0 9em 0;
+    border-radius: .5em;
+    width: auto;
+}
+
+.icon-arrow{
+    color: white;
+    background-color: rgba(255,255,255, .4);
+    padding: .7em;
+    border-radius: .5em;
+    margin-left:  1.5em;
+    
+}
 
 
 /* Media queries*/
