@@ -40,7 +40,7 @@ body{
 .top-content{
     padding: 3.5em 4em 0 0;
     position: relative;
-    height: 30em;
+    height: 31em;
     overflow: hidden;
 }
 
@@ -94,8 +94,8 @@ body{
 
 .top-content-image{ 
         position: absolute;
-        top: 7em;
-        left: 9em;
+        top: 9em;
+        left: 6em;
         display: inline-block;
     
 } 
