@@ -31,8 +31,8 @@ body{
     right: 0;
 }
 
-.top-nav span{
-    font-size: 1.5em;
+.top-nav i{
+    font-size: 2.1em;
 }
 
 /* Main */
@@ -40,7 +40,7 @@ body{
 .top-content{
     padding: 3.5em 4em 0 0;
     position: relative;
-    height: 28em;
+    height: 30em;
     overflow: hidden;
 }
 
@@ -78,13 +78,6 @@ body{
     
 }
 
-.top-content-image{
-    position: absolute;
-    top: 7em;
-    left: 9em;
-    display: inline-block;
-
-}
 
 .ul-icons{
     padding: 0;
@@ -97,22 +90,54 @@ body{
 
 /* */
 
-@media screen and (min-width: 48.75em){
+@media screen and (min-width: 14em){
 
-.top-content-image img{
-    width: 220px;
-    height: 450px;
-    margin: 4em 0 0 21.8em;
+.top-content-image{ 
+        position: absolute;
+        top: 7em;
+        left: 9em;
+        display: inline-block;
+    
+} 
 
+.top-content-image img{ 
+    width: 13.75em;
+    height: 28.125em;
 }
 
+} 
+
+
+@media screen and (min-width: 53em){
+
+    .top-content-image{ /* posicionamento da imagem*/
+        position: absolute;
+        top: -5em;
+        left: 20em;
+        display: inline-block;
+        
+    }
+    
+    .top-content-image img{ /* tamanho da imagem*/
+        width: 22em;
+        height: 45em;   
+    }
+    
 }
 
 @media screen and (min-width: 74em){
-    .top-content-image img{
-        width: 400px;
-        height: 850px;
-        margin: -20em 0 0 15em;
+
+.top-content-image{ /* posicionamento da imagem*/
+    position: absolute;
+    top: -5em;
+    left: 22em;
+    display: inline-block;
     
 }
+
+.top-content-image img{ /* tamanho da imagem*/
+    width: 30em;
+    height: 45em;   
+}
+
 }
