@@ -1,9 +1,32 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 
+:root{
+    --dark-gray: #0D0D0D;
+    --medium-gray: #363636;
+    --medium-ciano: #03989E;
+    --white: #fff;
+}
+
 body{
     font-family: "poppins", sans-serif;
-    color: #0D0D0D;;
+    color: var(--dark-gray);
+}
+
+#sobre, #projetos, #contato{
+    min-height: 100vh;
+}
+
+#sobre{
+    background-color: lightblue;
+}
+
+#projetos{
+    background-color: lightgreen;
+}
+
+#contato{
+    background-color: lightpink;
 }
 
 .container{
@@ -11,40 +34,77 @@ body{
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-gap: 5px ;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 80px 900px 200px;
+    grid-gap: .312em;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 5em 56.25em 12.5em;
     grid-template-areas: 
-    "header nav"
-    "main main"
-    "footer footer";
+    "header"
+    "main"
+    "footer";
 }
 
-.cabecalho, .conteudo, .rodape{
+.conteudo, .rodape{
     /* background-color: lightsalmon; */
     padding: 1em;
 }
 
 .cabecalho{
     grid-area: header;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: white; 
+    padding: 1em 1em 0 1em;
+}
+
+.cabecalho-logo-menu{
+    max-width: 60em;
+    margin: 0 auto ;
+    text-align: left;  
 }
 
 .cabecalho-logo{
     margin-top: .5em;
-    height: 2.9em;   
-
+    height: 2.9em;      
 }
 
-.menu{
-    /* background-color: lightsalmon; */
-    grid-area: nav;
+.cabecalho-logo-menu ul{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    float: right;
+    margin: .7em 2em 0 0;
+}
+
+.cabecalho-logo-menu li{
+    list-style: none;
+}
+
+.cabecalho-logo-menu li a{
+     font-size: 1.1em;
+     text-decoration: none;
+     color: var(--dark-gray);
+     transition: color .5s;
+     cursor: pointer;
+}
+
+.menu-item{
+    display: none;
+}
+
+
+/* .menu{
+    background-color: lightsalmon;
+     grid-area: nav; 
     padding: 1.5em;
-}
+} */
 
 .menu-icon{
     font-size: 1.9em;
-    float: right;
-    padding-right: 1em;
+    /* float: right;
+    padding-right: 1em; */
 }
 
 .conteudo{
@@ -52,13 +112,13 @@ body{
 }
 
 .conteudo-topo{
-    max-width: 960px;
+    max-width: 60em;
     margin: 0 auto ;
     text-align: center;
 } 
 
 .conteudo-topo ul{
-    margin-top: 3.5em;
+    margin-top: 3em;
     padding: 0;
     text-align: left;
 }
@@ -71,13 +131,13 @@ body{
 .conteudo-topo li a{
     font-size: 1.5em;
     text-decoration: none;
-    color: #0D0D0D;
+    color: var(--dark-gray);
     transition: color .5s;
     cursor: pointer;
 }
 
-.conteudo-topo li a:hover{
-    color: #03989E;
+.conteudo-topo li a:hover, .cabecalho-logo-menu li a:hover{
+    color: var(--medium-ciano);
 }
 
 .img-perfil {
@@ -90,16 +150,16 @@ body{
 }
 
 .conteudo-topo-text h1{
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: normal;
     line-height: .1em;
 }
 .cor-nome{
-    color: #03989E;
+    color: var(--medium-ciano);
 }
 
 .conteudo-topo-text h2{
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: normal;
     line-height: 1.8em;
 }
@@ -108,13 +168,14 @@ body{
     font-size: .9em;
     font-weight: normal;
     line-height: 1.8em;
+    color: medium-gray;
 }
 
 .topo-button{
     display: inline-block;
     text-decoration: none;
     color: white;
-    background: #03989E;
+    background: var(--medium-ciano);
     padding: .6em 2em;
     border-radius: 2.5em;
     margin: 1.2em 0;
@@ -122,9 +183,12 @@ body{
 }
 
 .topo-button:hover{
-    box-shadow: 0 5px 20px rgba(3,152,158,1);
+    box-shadow: 0 .312em 1.25em rgba(3,152,158,1);
 }
 
+#sobre{
+    margin-top: 30em;
+}
 
 .rodape{
     grid-area: footer;
@@ -132,9 +196,17 @@ body{
 
 @media (min-width: 65em){
 
-/* Encontrar uma forma de deixar esse logo responsivo também  */
 .cabecalho-logo{
-    margin-left: 11.5em;
+    margin-top: .1em;
+    height: 3.3em; 
+}
+
+.menu-item{
+    display: block;
+}
+
+.menu-icon{
+    display: none;
 }
 
 .conteudo-topo ul{
@@ -146,7 +218,7 @@ body{
 }
 
 .img-perfil{
-        width: 280px;
+        width: 17.5em;
         float: right;
         margin: -10em 4em;
 }
