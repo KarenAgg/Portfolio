@@ -8,6 +8,10 @@
     --white: #fff;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: "poppins", sans-serif;
     color: var(--dark-gray);
@@ -19,6 +23,10 @@ body{
 
 #sobre{
     background-color: lightblue;
+}
+
+#sobre{
+    margin-top: 30em;
 }
 
 #projetos{
@@ -56,7 +64,7 @@ body{
     width: 100%;
     text-align: center;
     background: white; 
-    padding: 1em 1em 0 1em;
+    padding: .5em 1em 0 1em;
 }
 
 .cabecalho-logo-menu{
@@ -94,17 +102,8 @@ body{
     display: none;
 }
 
-
-/* .menu{
-    background-color: lightsalmon;
-     grid-area: nav; 
-    padding: 1.5em;
-} */
-
 .menu-icon{
     font-size: 1.9em;
-    /* float: right;
-    padding-right: 1em; */
 }
 
 .conteudo{
@@ -118,7 +117,7 @@ body{
 } 
 
 .conteudo-topo ul{
-    margin-top: 3em;
+    margin-top: 3.2em;
     padding: 0;
     text-align: left;
 }
@@ -186,8 +185,8 @@ body{
     box-shadow: 0 .312em 1.25em rgba(3,152,158,1);
 }
 
-#sobre{
-    margin-top: 30em;
+.scroll-down{
+    display: none;
 }
 
 .rodape{
@@ -195,6 +194,10 @@ body{
 }
 
 @media (min-width: 65em){
+
+.cabecalho{
+    padding-top: 1em;
+}
 
 .cabecalho-logo{
     margin-top: .1em;
@@ -240,6 +243,25 @@ body{
 .topo-button{
     margin-top: 2em;
 }
+
+.scroll-down{
+    display: block;
+    margin-top: 13em;
+    text-decoration: none;
+    color: var(--dark-gray); 
+    font-weight:500;
+}
+
+.icon-mouse{
+    font-size: 1.5em;
+    color: var(--medium-ciano);
+}
+
+.icon-arrow-down{
+    font-size: 1.1em;
+    color: var(--medium-ciano);
+}
+
 }
 
 
