@@ -64,7 +64,7 @@ body{
     width: 100%;
     text-align: center;
     background: white; 
-    padding: .5em 1em 0 1em;
+    padding: .3em 1em 0 1em;
 }
 
 .cabecalho-logo-menu{
@@ -193,6 +193,29 @@ body{
     grid-area: footer;
 }
 
+@media (min-width: 48.75em){
+
+.conteudo-topo-text{
+    text-align: left;
+}
+
+.img-perfil{
+    float: right;
+    margin-right: 4em;
+    width: 15em;
+}
+
+.conteudo-topo-text{
+    margin: -8.5em auto;
+    padding: 0 2em 0 4em;
+}
+
+.conteudo-topo-text p{
+    width: 60%;
+}
+
+}
+
 @media (min-width: 65em){
 
 .cabecalho{
@@ -212,6 +235,10 @@ body{
     display: none;
 }
 
+.conteudo-topo{
+    margin-top: -2em;
+}
+
 .conteudo-topo ul{
     margin-top: 8em;
 }
@@ -221,19 +248,17 @@ body{
 }
 
 .img-perfil{
-        width: 17.5em;
-        float: right;
-        margin: -10em 4em;
+    width: 17.5em;
+    margin: -10em 4em;
 }
 
 .conteudo-topo-text{
-    text-align: left;
     margin: -8.5em auto;
     padding: 0 8em;
 }
 
 .conteudo-topo-text h1{
-    font-size: 3em;
+    font-size: 2.9em;
 }
 
 .conteudo-topo-text p{
@@ -246,7 +271,7 @@ body{
 
 .scroll-down{
     display: block;
-    margin-top: 13em;
+    margin-top: 14em;
     text-decoration: none;
     color: var(--dark-gray); 
     font-weight:500;
