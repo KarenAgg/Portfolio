@@ -13,22 +13,30 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>Karen Agg</title>
+    <script src="nav.js" defer></script>
 </head>
 <body>
     
   <div id="home" class="container">
 
     <header class="cabecalho">
-        <div class="cabecalho-logo-menu">
-            <img src="images/nome.svg" alt="" class="cabecalho-logo">
+        <div class="cabecalho-div">
+            <div class="logo-div">
+                <img src="images/nome.svg" alt="" class="logo">
+            </div>
 
-        <ul>
-            <li><a href="#home" class="menu-item">Home</a></li>
-            <li><a href="#sobre" class="menu-item">Sobre</a></li>
-            <li><a href="#projetos" class="menu-item">Projetos</a></li>
-            <li><a href="#contato" class="menu-item">Contato</a></li>
-            <li><a href="#"><i class="fa-solid fa-ellipsis-vertical menu-icon"></i></a></li>
-        </ul>
+            <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false"><span class="sr-only">Menu</span></button>
+
+            <!-- <i class="fa-solid fa-ellipsis-vertical menu-icon"></i> -->
+
+            <div class="menu">
+                <ul id="primary-nav" data-visible="false" class="primary-nav flex">
+                    <li><a href="#home" class="menu-item"><span aria-hidden="true"></span>Home</a></li>
+                    <li><a href="#sobre" class="menu-item"><span aria-hidden="true"></span>Sobre</a></li>
+                    <li><a href="#projetos" class="menu-item"><span aria-hidden="true"></span>Projetos</a></li>
+                    <li><a href="#contato" class="menu-item"><span aria-hidden="true"></span>Contato</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
