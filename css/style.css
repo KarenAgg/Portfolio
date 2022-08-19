@@ -117,7 +117,7 @@ h3{
     display: grid;
     grid-gap: .312em;
     grid-template-columns: repeat(1fr);
-    grid-template-rows: 5rem 56.25rem 12.5rem;
+    grid-template-rows: 5rem 150rem 12.5rem;
     grid-template-areas: 
     "header"
     "main"
@@ -254,6 +254,20 @@ h3{
 
 /* ----- EXPERIÊNCIA ----- */
 
+.experiencia-container{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.experiencia-section{
+    padding: .5rem 1.8rem .5rem;
+}
+
+.experiencia-icon{
+    font-size: 2rem;
+    color:var(--medium-ciano);
+}
 
 
 /* ----- PROJETOS ----- */
@@ -289,6 +303,13 @@ h3{
 
     }
 
+    ::-webkit-backdrop-filter{
+
+            background: hsl(0 0% 100% / .1); 
+            backdrop-filter: blur(1rem);
+        }
+    }
+
     @supports (backdrop-filter: blur(1rem)){
         .primary-nav {
             background: hsl(0 0% 100% / .1); 
@@ -319,7 +340,6 @@ h3{
         background-image: url(../images/close.svg);
     }
 
-}
 
 @media (min-width: 48.75em){
 
@@ -370,7 +390,14 @@ h3{
     .button{
         grid-area: button;
     }
+  
+    .experiencia-section{
+        padding: 1rem 3rem 1rem;
+    }
 
+    .mobile-nav-toggle{
+        display: none;
+    }
 
 
 }
@@ -419,10 +446,16 @@ h3{
 
 .scroll-down{
     display: block;
-    margin-top: 14rem;
+    margin-top: 15rem;
     text-decoration: none;
     color: var(--dark-gray); 
     font-weight:500;
+    text-align: center;
+    transition: .3s;
+}
+
+.scroll-down:hover{
+    transform: translateY(.25rem);
 }
 
 .icon-mouse{
@@ -439,18 +472,13 @@ h3{
     font-size: 1.5rem;
 }
 
-.sd-section{
-    margin-top: 4rem;
-    text-align: center;
-}
-
 .sobre{
     margin-top: 3rem;
 }
 
 .sobre-container{
     column-gap: 4rem;
-    margin-top: 4rem;
+    margin: 6rem 0 5rem;
 }
 
 .sobre-img{
@@ -472,6 +500,21 @@ h3{
 .sobre-button{
     text-align: left;
 }
+
+.experiencia-container{
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.experiencia-section{
+    padding: 2.5rem 2.5rem 1rem;
+}
+
+.experiencia-icon{
+    font-size: 2.5rem;
+}
+
 
 }
 
