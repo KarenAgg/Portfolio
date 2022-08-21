@@ -296,12 +296,12 @@ h3{
     padding: 0 1.5rem;
 }
 
-.projeto-dados{
+/* .projeto-dados{
     padding: 0 1rem;
-}
+} */
 
 .projeto-img{
-    width: 260px;
+    width: 290px;
     height: 180px;
     border-radius: .5rem;
     justify-self: center;
@@ -493,8 +493,8 @@ h3{
     }
 
     .swiper {
-        width: 750px; 
-        height: 300px;
+        width: 46.875rem; 
+        height: 18.75rem;
     }
 
     .projeto-content{
@@ -637,8 +637,8 @@ h3{
 }
 
 .swiper {
-    width: 780px; 
-    height: 310px;
+    width: 48.75rem; 
+    height: 19.375rem;
 }
 
 }
