@@ -117,16 +117,11 @@ h3{
     display: grid;
     grid-gap: .312em;
     grid-template-columns: repeat(1fr);
-    grid-template-rows: 5rem 160rem 12.5rem;
+    grid-template-rows: 5rem 150rem 12.5rem;
     grid-template-areas: 
     "header"
     "main"
     "footer";
-}
-
-.grid{
-    display: grid;
-    gap: 1.5rem;
 }
 
 
@@ -140,7 +135,6 @@ h3{
     left: 0;
     width: 100%;
     background: white; 
-    z-index: 100;
 }
 
 .header-nav{ 
@@ -178,7 +172,8 @@ h3{
 
 .main{
     grid-area: main;
-    padding: 1rem;   
+    padding: 1rem;
+    
 }
 
 .home{
@@ -222,11 +217,6 @@ h3{
     color: var(--medium-ciano);
 }
 
-.button-home:hover{
-    transform: translateX(.25rem);
-}
-
-
 .scroll-down{
     display: none;
 }
@@ -258,8 +248,8 @@ h3{
     align-self: center;
 }
 
-.button-cv:hover{
-    transform: translateY(.25rem);
+.sobre-button{
+    text-align: center;
 }
 
 /* ----- EXPERIÊNCIA ----- */
@@ -282,88 +272,6 @@ h3{
 
 /* ----- PROJETOS ----- */
 
-.projet{
-    position: relative;
-    z-index: 998;
-}
-.projeto-container{
-    overflow: initial;
-    max-width: 768px;
-    margin: 3rem auto 0;
-}
-
-.projeto-content{
-    padding: 0 1.5rem;
-}
-
-.projeto-dados{
-    padding: 0 1rem;
-}
-
-.projeto-img{
-    width: 260px;
-    height: 180px;
-    border-radius: .5rem;
-    justify-self: center;
-} 
-
-.projeto-title{
-    margin-top: -.9rem;
-    margin-bottom: .8rem;
-}
-
-.projeto-desc{
-    margin-bottom: -.5rem;
-}
-
-.projeto-button{
-    font-size: .9rem;
-}
-
-.button-icon{
-    font-size: 1.1rem;
-}
-
-.projeto-button:hover, .button-icon{
-    transform: translateX(.25rem);
-}
-
-.swiper {
-    width: 340px; 
-    height: 430px;
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after{
-    content: '';
-}
-
-.swiper-projeto-icon{
-    font-size: 2rem;
-    color: var(--medium-ciano);
-}
-
-.swiper-button-prev{
-    left: -.5rem;
-}
-
-.swiper-button-next{
-    right: -.5rem;
-}
-
-.swiper-container-horizontal > .swiper-container-bullets{
-    bottom: -2.5rem;
-}
-
-.swiper-pagination-bullet-active{
-    background-color: var(--medium-ciano);
-}
-
-.swiper-button-next,
-.swiper-button-prev,
-.swiper-pagination-bullet{
-    outline: none;
-}
 
 
 /* ----- RODAPÉ ----- */
@@ -381,7 +289,7 @@ h3{
 
     .primary-nav{
         position: fixed;
-        z-index: 1000;
+        z-index: 100;
         inset: 0 0 0 30%;
 
         flex-direction: column;
@@ -395,6 +303,11 @@ h3{
 
     }
 
+    ::-webkit-backdrop-filter{
+
+            background: hsl(0 0% 100% / .1); 
+            backdrop-filter: blur(1rem);
+        }
     }
 
     @supports (backdrop-filter: blur(1rem)){
@@ -416,7 +329,7 @@ h3{
         aspect-ratio: 1;
         top: 1.1rem;
         right: .6rem;
-        z-index: 9999;
+        z-index: 999;
         background-color: transparent;
         background-image: url(../images/menu.svg);
         font-size: 1rem;
@@ -486,28 +399,8 @@ h3{
         display: none;
     }
 
-    .experiencia-container{
-        flex-direction: row;
-        align-items: center;
-        text-align: center;
-    }
 
-    .swiper {
-        width: 750px; 
-        height: 300px;
-    }
-
-    .projeto-content{
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-    }
-
-    
- .projeto-dados{
-    padding: 2rem 1rem 0;
-    } 
-
-} 
+}
 
 @media (min-width: 65em){
 
@@ -599,13 +492,19 @@ h3{
     margin-right: 14rem;
 }
 
-.button-cv{
+.button{
     justify-self: left;
     align-self:flex-end;
 }
 
 .sobre-button{
     text-align: left;
+}
+
+.experiencia-container{
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
 }
 
 .experiencia-section{
@@ -616,33 +515,8 @@ h3{
     font-size: 2.5rem;
 }
 
-.projeto-content{
-    column-gap: 5rem;
-}
-
-.swiper-projeto-icon{
-    font-size: 3.5rem;
-}
-
-.swiper-button-prev{
-    left: -3.5rem;
-}
-
-.swiper-button-next{
-    right: -3.5rem;
-}
-
-.swiper-container-horizontal > .swiper-container-bullets{
-    bottom: -4.5rem;
-}
-
-.swiper {
-    width: 780px; 
-    height: 310px;
-}
 
 }
-
 
 
 
