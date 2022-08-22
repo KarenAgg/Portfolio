@@ -170,7 +170,12 @@ h3{
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 1.1rem;
+    font-size: .9rem;
+}
+
+.menu-icon-nav{
+    font-size: 1rem;
+    padding-right: .5rem;
 }
 
 /* ----- HOME ----- */
@@ -297,11 +302,11 @@ h3{
 }
 
 .projeto-dados{
-    padding: 0 .5rem;
+    padding: 0 1rem;
 }
 
 .projeto-img{
-    width: 275px;
+    width: 260px;
     height: 180px;
     border-radius: .5rem;
     justify-self: center;
@@ -374,6 +379,11 @@ h3{
     color: var(--dark-gray);
 }
 
+.section-contato-title{
+    margin-top: 2rem;
+}
+
+
 .contato-container{
     overflow: initial;
     max-width: 48rem;
@@ -393,6 +403,7 @@ h3{
     margin-right: .75rem;
     align-self: center;
 }
+
 .contato-title{
     margin: .5rem 0;
 }
@@ -462,7 +473,13 @@ h3{
     }
     .primary-nav{
         margin: 1rem;
+        font-size: 1.1rem;
     }
+
+    .menu-icon-nav{
+        display: none;
+    }
+
     .home-content{
         text-align: left;
     }
@@ -685,6 +702,11 @@ h3{
 .swiper {
     width: 48.75rem; 
     height: 19.375rem;
+}
+
+.contato-container{
+    max-width: 75rem;
+    padding: 3rem 5rem 0;
 }
 
 .contato-dados{
