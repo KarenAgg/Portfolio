@@ -534,12 +534,6 @@ h3{
         display: none;
     }
 
-    .experiencia-container{
-        flex-direction: row;
-        align-items: center;
-        text-align: center;
-    }
-
     .swiper {
         width: 46.875rem; 
         height: 18.75rem;
@@ -670,6 +664,12 @@ h3{
 
 .sobre-button{
     text-align: left;
+}
+
+.experiencia-container{
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
 }
 
 .experiencia-section{
