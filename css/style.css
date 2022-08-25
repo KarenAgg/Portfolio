@@ -379,8 +379,12 @@ h3{
     color: var(--dark-gray);
 }
 
+.contact{
+    margin-top: 15rem;
+}
+
 .section-contato-title{
-    margin-top: 20rem;
+    margin-top: 10rem;
 }
 
 
@@ -717,7 +721,7 @@ h3{
 }
 
 .section-contato-title{
-    margin: 5rem 0 2rem;
+    margin: 0 0 2rem;
 }
 
 
