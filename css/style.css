@@ -380,7 +380,7 @@ h3{
 }
 
 .section-contato-title{
-    margin-top: 2rem;
+    margin-top: 10rem;
 }
 
 
@@ -558,7 +558,7 @@ h3{
     }
 
     .section-contato-title{
-        margin-top: 12rem;
+        margin-top: 17rem;
     }
 
  
@@ -707,7 +707,8 @@ h3{
 
 .contato-container{
     max-width: 75rem;
-    padding: 3rem 5rem 0;
+    padding: 3rem 5rem -2rem;
+    margin-top: 4rem;
 }
 
 .contato-dados{
@@ -716,8 +717,9 @@ h3{
 }
 
 .section-contato-title{
-    margin: 1rem 0 2rem;
+    margin: 5rem 0 2rem;
 }
+
 
 }
 
