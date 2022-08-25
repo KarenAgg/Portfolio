@@ -709,6 +709,10 @@ h3{
     height: 19.375rem;
 }
 
+.contact{
+    margin-top: 5rem;
+}
+
 .contato-container{
     max-width: 75rem;
     padding: 3rem 5rem -2rem;
