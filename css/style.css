@@ -247,7 +247,7 @@ h3{
 }
 
 .sobre-img{
-    width: 250px;
+    width: 200px;
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
@@ -380,7 +380,7 @@ h3{
 }
 
 .contact{
-    margin-top: 20rem;
+    margin-top: 25rem;
 }
 
 .section-contato-title{
@@ -520,6 +520,7 @@ h3{
 
     .sobre-img{
         grid-area: image;
+        width: 250px;
     }
 
     .sobre-dados{
@@ -653,7 +654,7 @@ h3{
 .sobre-img{
     justify-self: right;
     align-self: right;
-    width: 320px;
+    width: 280px;
 }
 
 .sobre-descricao{
@@ -710,7 +711,7 @@ h3{
 }
 
 .contact{
-    margin-top: 5rem;
+    margin-top: 12rem;
 }
 
 .contato-container{
