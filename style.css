@@ -39,6 +39,7 @@ section {
   padding: 0 2rem;
   margin: 0 auto;
   max-width: 1200px;
+  scroll-margin-top: 190px;
 }
 
 .header {
@@ -102,6 +103,7 @@ section {
 .navbar a:hover {
   color: var(--quantum-purple);
   padding-bottom: 0.5rem;
+  font-weight: 800;
 }
 
 .list-navbar {
@@ -118,7 +120,7 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.06rem;
   padding: 0.8rem 2rem;
-  border-radius: 15px;
+  border-radius: 9px;
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
@@ -149,7 +151,6 @@ section {
   justify-content: space-between;
   align-items: start;
   padding: 0;
-  background-color:;
 }
 
 .social-links-line {
@@ -161,7 +162,7 @@ section {
 }
 
 .container-video {
-  width: 1200px;
+  width: 800px;
   display: flex; /* aqui estava o erro */
   justify-content: flex-end;
   border-radius: 10px;
@@ -200,7 +201,7 @@ section {
 }
 
 .container-content h1 {
-  font-size: 6.5rem;
+  font-size: 4.5rem;
   padding: 1.5rem 0;
 }
 
